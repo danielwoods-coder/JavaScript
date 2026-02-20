@@ -1,0 +1,12 @@
+[
+  {"q": "HTML 的含义是？", "choices": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Text Transfer Protocol"], "answer": 0},
+  {"q": "下面哪个标签用来插入图片？", "choices": ["<a>", "<img>", "<picture>", "<div>"], "answer": 1},
+  {"q": "用于创建无序列表的标签是？", "choices": ["<ol>", "<li>", "<ul>", "<p>"], "answer": 2},
+  {"q": "表单中用于提交的按钮通常是？", "choices": ["<button type=\"submit\">", "<input type=\"text\">", "<label>", "<input type=\"button\">"], "answer": 0},
+  {"q": "设置文本颜色使用哪个 CSS 属性？", "choices": ["font-size", "color", "background", "margin"], "answer": 1},
+  {"q": "用于创建链接的标签是？", "choices": ["<link>", "<a>", "<nav>", "<href>"], "answer": 1},
+  {"q": "表格中表格行的标签是？", "choices": ["<tr>", "<td>", "<th>", "<table>"], "answer": 0},
+  {"q": "在 HTML 中引入 JavaScript 通常使用哪个标签？", "choices": ["<script>", "<js>", "<link>", "<import>"], "answer": 0},
+  {"q": "用于语义化章节的标签是？", "choices": ["<section>", "<div>", "<span>", "<b>"], "answer": 0},
+  {"q": "表单中用于输入单行文本的控件是？", "choices": ["<textarea>", "<input type=\"text\">", "<select>", "<button>"], "answer": 1}
+]

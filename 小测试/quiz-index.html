@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>小测验</title>
+  <link rel="stylesheet" href="quiz-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HTML 小测验</h1>
+    <div id="quiz" class="card">
+      <div id="meta">
+        <div id="progress">第 <span id="current">1</span>/<span id="total">1</span> 题</div>
+        <div id="timer">计时: <span id="time">--</span>s</div>
+      </div>
+      <div id="question" class="question">问题加载中...</div>
+      <div id="choices" class="choices"></div>
+      <div class="controls">
+        <button id="submit" disabled>提交</button>
+        <button id="next" disabled>下一题</button>
+        <button id="restart" style="display:none">重试</button>
+      </div>
+      <div id="result" class="result" style="display:none"></div>
+    </div>
+  </div>
+  <script src="quiz-script.js"></script>
+</body>
+</html>

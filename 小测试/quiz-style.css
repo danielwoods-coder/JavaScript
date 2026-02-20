@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: #e9ecef;
+    color: #0a0a0a;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center
+}
+
+.container {
+    width: 100%;
+    max-width: 720px
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08)
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 16px
+}
+
+#meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 14px
+}
+
+.choices {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.choice-btn {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    color: #000
+}
+
+.choice-btn:hover {
+    background: #f0f6ff;
+    color: #000
+}
+
+/* Selected choice background to indicate current selection */
+.choice-btn.selected {
+    background: #dbeafe;
+    border-color: #9dbffb;
+    color: #000;
+}
+.choice-btn.selected:hover {
+    background: #c7ddff;
+}
+
+.choice-btn.correct {
+    /* Remove special highlight for correct answer */
+    background: #fff;
+    border-color: #ccc;
+    color: #000
+}
+
+.choice-btn.wrong {
+    /* Remove special highlight for wrong answer */
+    background: #fff;
+    border-color: #ccc;
+    color: #000
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px
+}
+
+button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer
+}
+
+button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed
+}
+
+#restart {
+    background: #6c757d
+}
+
+.result {
+    margin-top: 12px;
+    font-weight: 600
+}
+
+@media(max-width:480px) {
+    .question {
+        font-size: 18px;
+        padding-right: 6px
+    }
+}
