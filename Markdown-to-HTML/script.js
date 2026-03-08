@@ -9,7 +9,9 @@ const regBold = /^[*_]{2}(.*)[*_]{2}$/gm;
 const regBoldHeading = /^#{1} [*_]{2}(.*)[*_]{2}/;
 const regItalic = /^[*_]{1}(.*)[*_]{1}$/gm;
 const regImg = /^!\[(.*)\]\((.*)\)$/gm;
+
 const regLink = /^\[(.*)\]\((.*)\)$/gm;
+
 const regQuote = /^> ([a-zA-Z0-9-_\s]+)$/gm;
 const regQuoteStrongIta = /^> \*{2}(.*) \*{1}(.*)\*{3}/;
 const regnotConvert = /(?<=[a-zA-Z0-9_-\s]+)[#>\w\s]+/;
@@ -48,19 +50,12 @@ function convertMarkdown() {
 
     return str
 }
-function raw(str) {
 
-    return str.replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-
-}
 markdownInput.addEventListener("input", () => {
     const result = convertMarkdown();
     if (result) {
-        const rawResult = raw(result);
-        rawHtml.innerHTML = rawResult;
+
+        rawHtml.innerText = result;
         htmlPreview.innerHTML = result
-    } else {
-        console.log(11)
     }
 })
