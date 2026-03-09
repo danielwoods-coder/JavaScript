@@ -25,7 +25,7 @@ function isFullnameValid() {
 }
 
 function isEmailValid() {
-  let regexOfEmail = /^[\w.+-]+@[a-zA-Z0-9-]+\.[[a-zA-Z0-9-.]+$/
+  let regexOfEmail = /^[\w.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
   let email = emailAdd.value;
   return regexOfEmail.test(email)
 }
